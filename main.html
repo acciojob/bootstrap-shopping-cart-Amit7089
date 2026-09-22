@@ -1,16 +1,196 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shopping Cart</title>
+
+  <!-- Bootstrap 4 -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background: #fff;
+    }
+
+    .block-heading {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .block-heading h2 {
+      color: #3b99e0;
+    }
+
+    .product {
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .product img {
+      max-width: 120px;
+    }
+
+    .summary {
+      padding: 25px;
+      border-top: 2px solid #5ea4f3;
+      border-bottom: 2px solid #5ea4f3;
+      background-color: #f7fbff;
+    }
+
+    .summary h3 {
+      color: #3b99e0;
+    }
+
+    .summary .btn {
+      width: 100%;
+      padding: 10px;
+    }
+  </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <div class="container my-5">
+
+    <!-- Heading -->
+    <div class="block-heading">
+      <h2>Shopping Cart</h2>
+      <p>Choose your products and complete your purchase.</p>
+    </div>
+
+    <div class="row">
+
+      <!-- Products -->
+      <div class="col-lg-8">
+
+        <!-- Product 1 -->
+        <div class="product">
+          <div class="row align-items-center">
+
+            <div class="col-md-4">
+              <img
+                src="https://picsum.photos/120/120?random=1"
+                class="img-fluid"
+                alt="Product">
+            </div>
+
+            <div class="col-md-8">
+              <h5>Product One</h5>
+              <p class="text-muted">
+                High quality product with great features.
+              </p>
+
+              <h6>₹499</h6>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+          <div class="row align-items-center">
+
+            <div class="col-md-4">
+              <img
+                src="https://picsum.photos/120/120?random=2"
+                class="img-fluid"
+                alt="Product">
+            </div>
+
+            <div class="col-md-8">
+              <h5>Product Two</h5>
+              <p class="text-muted">
+                Stylish and useful product for everyday use.
+              </p>
+
+              <h6>₹699</h6>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+          <div class="row align-items-center">
+
+            <div class="col-md-4">
+              <img
+                src="https://picsum.photos/120/120?random=3"
+                class="img-fluid"
+                alt="Product">
+            </div>
+
+            <div class="col-md-8">
+              <h5>Product Three</h5>
+              <p class="text-muted">
+                Premium product with excellent quality.
+              </p>
+
+              <h6>₹799</h6>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Summary -->
+      <div class="col-lg-4">
+
+        <div class="summary">
+
+          <h3>Summary</h3>
+
+          <div class="row">
+            <div class="col-8">
+              <h6>Subtotal</h6>
+            </div>
+
+            <div class="col-4 text-right">
+              <span>₹1997</span>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-8">
+              <h6>Discount</h6>
+            </div>
+
+            <div class="col-4 text-right">
+              <span>₹0</span>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-8">
+              <h5>Total</h5>
+            </div>
+
+            <div class="col-4 text-right">
+              <h5>₹1997</h5>
+            </div>
+          </div>
+
+          <button class="btn btn-primary mt-3">
+            Checkout
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
 
 </body>
-
 </html>
